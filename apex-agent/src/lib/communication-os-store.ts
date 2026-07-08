@@ -2,7 +2,7 @@ import { promises as fs } from "fs";
 import path from "path";
 import { CommunicationConversation, CommunicationMessage, CommunicationOsReport } from "./types";
 
-const DATA_DIR = path.join(process.cwd(), "data");
+import { DATA_DIR } from "./data-dir";
 const REPORTS_FILE = path.join(DATA_DIR, "communication-os.json");
 const MESSAGES_FILE = path.join(DATA_DIR, "communications.json");
 const CONVERSATIONS_FILE = path.join(DATA_DIR, "conversation-memory.json");

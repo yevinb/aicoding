@@ -95,7 +95,7 @@ function ReportView({ report }: { report: LearningReport }) {
 
       <Card title="Executive learning summary">
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 text-sm">
-          <SummaryBlock label="What Apex learned" items={es.whatApexLearned} />
+          <SummaryBlock label="What ApexGrowth learned" items={es.whatApexLearned} />
           <SummaryBlock label="What improved" items={es.whatImproved} good />
           <SummaryBlock label="What declined" items={es.whatDeclined} warn />
           <SummaryBlock label="What should change" items={es.whatShouldChange} />

@@ -2,7 +2,7 @@ import { promises as fs } from "fs";
 import path from "path";
 import { KnowledgeRelationship, MemoryGraphReport, MemoryItem } from "./types";
 
-const DATA_DIR = path.join(process.cwd(), "data");
+import { DATA_DIR } from "./data-dir";
 const REPORTS_FILE = path.join(DATA_DIR, "memory-graph.json");
 const MEMORIES_FILE = path.join(DATA_DIR, "memories.json");
 const RELATIONSHIPS_FILE = path.join(DATA_DIR, "knowledge-graph.json");

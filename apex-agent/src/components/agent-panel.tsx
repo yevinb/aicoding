@@ -49,7 +49,7 @@ export function AgentPanel({ leadId }: { leadId: string }) {
     <div className="rounded-xl border border-line bg-surface p-5 space-y-5">
       <div className="flex items-center justify-between">
         <h2 className="text-xs font-semibold uppercase tracking-wide text-muted">
-          Run Apex on this lead
+          Run ApexGrowth on this lead
         </h2>
         {output && (
           <span className="text-[10px] uppercase tracking-wide text-muted">
@@ -71,7 +71,7 @@ export function AgentPanel({ leadId }: { leadId: string }) {
           disabled={running}
           className="rounded-lg bg-accent px-5 py-2.5 text-sm font-medium text-white hover:opacity-90 disabled:opacity-50 transition"
         >
-          {running ? "Apex is thinking…" : "Run agent"}
+          {running ? "ApexGrowth is thinking…" : "Run agent"}
         </button>
         {error && <p className="text-sm text-bad">{error}</p>}
       </div>

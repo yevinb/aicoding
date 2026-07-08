@@ -15,7 +15,7 @@ export default async function RevenueOsPage() {
         <div>
           <h1 className="text-2xl font-semibold">Revenue Employee OS</h1>
           <p className="text-sm text-muted mt-1">
-            Apex operates autonomously — observe, think, plan, execute — and
+            ApexGrowth operates autonomously — observe, think, plan, execute — and
             delegates to every specialist agent without waiting for instructions.
           </p>
         </div>
@@ -25,7 +25,7 @@ export default async function RevenueOsPage() {
       {!latest ? (
         <div className="rounded-xl border border-line bg-surface p-12 text-center text-muted">
           <p className="text-sm">
-            No workday cycles yet. Run a cycle and Apex will observe the full
+            No workday cycles yet. Run a cycle and ApexGrowth will observe the full
             pipeline, prioritize the highest-value actions, delegate to
             specialist agents, and report what changed.
           </p>

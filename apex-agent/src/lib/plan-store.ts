@@ -2,7 +2,7 @@ import { promises as fs } from "fs";
 import path from "path";
 import { AccountPlan } from "./types";
 
-const DATA_DIR = path.join(process.cwd(), "data");
+import { DATA_DIR } from "./data-dir";
 const PLANS_FILE = path.join(DATA_DIR, "plans.json");
 
 async function readAll(): Promise<Record<string, AccountPlan>> {

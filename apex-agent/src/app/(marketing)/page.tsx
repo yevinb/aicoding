@@ -25,27 +25,27 @@ const PROBLEMS = [
 const STEPS = [
   {
     title: "Discover",
-    body: "Apex finds companies matching your ideal customer profile — continuously, without waiting for leads to arrive.",
+    body: "ApexGrowth finds companies matching your ideal customer profile — continuously, without waiting for leads to arrive.",
   },
   {
     title: "Research",
-    body: "Apex understands businesses, buying signals, technology stacks, and decision makers before anyone reaches out.",
+    body: "ApexGrowth understands businesses, buying signals, technology stacks, and decision makers before anyone reaches out.",
   },
   {
     title: "Strategize",
-    body: "Apex creates account plans and winning approaches tailored to each opportunity's stakeholders and timing.",
+    body: "ApexGrowth creates account plans and winning approaches tailored to each opportunity's stakeholders and timing.",
   },
   {
     title: "Engage",
-    body: "Apex runs personalized multi-channel outreach anchored on verified signals — not templates.",
+    body: "ApexGrowth runs personalized multi-channel outreach anchored on verified signals — not templates.",
   },
   {
     title: "Convert",
-    body: "Apex handles replies, prepares meetings, advances pipeline stages, and keeps CRM accurate.",
+    body: "ApexGrowth handles replies, prepares meetings, advances pipeline stages, and keeps CRM accurate.",
   },
   {
     title: "Learn",
-    body: "Apex improves from every interaction — messaging, targeting, and process refine automatically.",
+    body: "ApexGrowth improves from every interaction — messaging, targeting, and process refine automatically.",
   },
 ];
 
@@ -69,9 +69,48 @@ const TRUST = [
   { title: "Enterprise security", desc: "Your data stays in your environment. No training on customer records without consent." },
   { title: "Human approval controls", desc: "Contracts, discounts, and sensitive commitments require explicit approval." },
   { title: "Transparent reasoning", desc: "Every recommendation includes evidence, assumptions, and confidence levels." },
-  { title: "CRM ownership", desc: "Apex maintains your CRM as source of truth — never hides missing data." },
+  { title: "CRM ownership", desc: "ApexGrowth maintains your CRM as source of truth — never hides missing data." },
   { title: "Data accuracy", desc: "Verified information over assumptions. Facts separated from hypotheses." },
   { title: "Compliance-ready", desc: "Unsubscribes honored immediately. Outreach respects prospect preferences." },
+];
+
+const PRICING = [
+  {
+    name: "Starter",
+    price: "$199",
+    period: "/month",
+    audience: "Solo founders and early-stage teams",
+    highlights: [
+      "Up to 500 leads tracked",
+      "Core autonomous pipeline workflows",
+      "Email support",
+      "7-day free trial",
+    ],
+  },
+  {
+    name: "Growth",
+    price: "$999",
+    period: "/month",
+    audience: "Revenue teams scaling outbound and inbound",
+    highlights: [
+      "Up to 5,000 leads tracked",
+      "Mission Control, Execution, and Revenue Signals",
+      "Priority support and onboarding",
+      "Usage-based expansion available",
+    ],
+  },
+  {
+    name: "Pro / Agency",
+    price: "$2,500+",
+    period: "/month",
+    audience: "Agencies and multi-brand GTM operators",
+    highlights: [
+      "Multi-workspace operations",
+      "Advanced automation and provider adapters",
+      "Dedicated success support",
+      "Custom performance add-ons",
+    ],
+  },
 ];
 
 export default function HomePage() {
@@ -88,12 +127,12 @@ export default function HomePage() {
                 Your AI Sales Team That Works 24/7
               </p>
               <h1 className="text-4xl sm:text-5xl lg:text-[3.25rem] font-semibold tracking-tight leading-[1.1] animate-fade-in">
-                Meet Apex.
+                Meet ApexGrowth.
                 <br />
                 <span className="text-muted">Your Autonomous AI Revenue Employee.</span>
               </h1>
               <p className="mt-6 text-lg text-muted max-w-xl mx-auto lg:mx-0 leading-relaxed animate-fade-in">
-                Apex finds your best prospects, researches accounts, creates personalized
+                ApexGrowth finds your best prospects, researches accounts, creates personalized
                 outreach, manages conversations, books meetings, and continuously
                 improves your sales pipeline.
               </p>
@@ -108,7 +147,7 @@ export default function HomePage() {
                   href="/command-center"
                   className="inline-flex items-center justify-center rounded-xl border border-white/10 bg-white/5 px-6 py-3.5 text-sm font-medium hover:bg-white/10 transition backdrop-blur"
                 >
-                  Watch Apex Work
+                  Watch ApexGrowth Work
                 </Link>
               </div>
               <p className="mt-8 text-xs text-muted max-w-md mx-auto lg:mx-0">
@@ -131,7 +170,7 @@ export default function HomePage() {
               Sales teams spend too much time searching, researching, and following up.
             </h2>
             <p className="mt-4 text-muted text-lg">
-              Apex replaces fragmented sales workflows with one autonomous revenue system.
+              ApexGrowth replaces fragmented sales workflows with one autonomous revenue system.
             </p>
           </div>
           <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -155,7 +194,7 @@ export default function HomePage() {
             Autonomous engine
           </p>
           <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight max-w-xl">
-            How Apex works
+            How ApexGrowth works
           </h2>
           <div className="mt-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {STEPS.map((s, i) => (
@@ -251,11 +290,11 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Why Apex Wins */}
+      {/* Why ApexGrowth Wins */}
       <section className="border-t border-white/5 py-24">
         <div className="mx-auto max-w-6xl px-6">
           <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-center">
-            Why Apex wins
+            Why ApexGrowth wins
           </h2>
           <div className="mt-14 grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <div className="rounded-2xl border border-white/5 bg-surface/30 p-8">
@@ -272,7 +311,7 @@ export default function HomePage() {
             </div>
             <div className="rounded-2xl border border-accent/20 bg-accent-soft/20 p-8">
               <p className="text-sm font-medium text-accent uppercase tracking-wide">
-                Apex
+                ApexGrowth
               </p>
               <ul className="mt-6 space-y-3">
                 {APEX_WINS.map((t) => (
@@ -293,7 +332,7 @@ export default function HomePage() {
             Your sales team never sleeps.
           </h2>
           <p className="mt-4 text-muted text-lg max-w-2xl mx-auto">
-            Apex continuously finds opportunities, monitors buying signals, updates
+            ApexGrowth continuously finds opportunities, monitors buying signals, updates
             intelligence, creates actions, and learns from outcomes — without waiting
             for instructions.
           </p>
@@ -319,6 +358,57 @@ export default function HomePage() {
           >
             See the Revenue Employee OS →
           </Link>
+        </div>
+      </section>
+
+      {/* Trust */}
+      <section id="pricing" className="border-t border-white/5 py-24 bg-surface/30">
+        <div className="mx-auto max-w-6xl px-6">
+          <div className="max-w-2xl">
+            <p className="text-xs font-medium uppercase tracking-widest text-accent mb-3">
+              Billing
+            </p>
+            <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight">
+              Simple pricing that scales with results
+            </h2>
+            <p className="mt-4 text-muted text-lg">
+              Start with a monthly subscription, then scale with usage and optional
+              onboarding or performance-based add-ons.
+            </p>
+          </div>
+          <div className="mt-12 grid gap-6 lg:grid-cols-3">
+            {PRICING.map((plan, idx) => (
+              <article
+                key={plan.name}
+                className={`rounded-2xl border p-6 ${
+                  idx === 1
+                    ? "border-accent/30 bg-accent-soft/20"
+                    : "border-white/10 bg-surface/60"
+                }`}
+              >
+                <p className="text-sm font-medium uppercase tracking-wide text-muted">
+                  {plan.name}
+                </p>
+                <p className="mt-4">
+                  <span className="text-4xl font-semibold">{plan.price}</span>
+                  <span className="text-sm text-muted">{plan.period}</span>
+                </p>
+                <p className="mt-3 text-sm text-muted">{plan.audience}</p>
+                <ul className="mt-6 space-y-2 text-sm">
+                  {plan.highlights.map((item) => (
+                    <li key={item} className="flex gap-2">
+                      <span className="text-good shrink-0">✓</span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </article>
+            ))}
+          </div>
+          <div className="mt-8 rounded-xl border border-white/10 bg-surface/50 px-5 py-4 text-sm text-muted">
+            One-time onboarding setup is available from $500 to $5,000 depending on
+            integrations and workflow complexity.
+          </div>
         </div>
       </section>
 
@@ -350,14 +440,14 @@ export default function HomePage() {
               Build your autonomous revenue engine.
             </h2>
             <p className="mt-4 text-muted max-w-lg mx-auto">
-              Apex is not software you use. Apex is an AI employee you deploy.
+              ApexGrowth is not software you use. ApexGrowth is an AI employee you deploy.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/os"
                 className="inline-flex items-center justify-center rounded-xl bg-accent px-8 py-4 text-sm font-medium text-white hover:opacity-90 transition shadow-lg shadow-accent/25"
               >
-                Launch Apex
+                Launch ApexGrowth
               </Link>
               <Link
                 href="/pipeline"

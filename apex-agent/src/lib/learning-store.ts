@@ -2,7 +2,7 @@ import { promises as fs } from "fs";
 import path from "path";
 import { LearningReport } from "./types";
 
-const DATA_DIR = path.join(process.cwd(), "data");
+import { DATA_DIR } from "./data-dir";
 const LEARNING_FILE = path.join(DATA_DIR, "learning.json");
 
 export async function getLearningReports(): Promise<LearningReport[]> {

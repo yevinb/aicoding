@@ -3,7 +3,7 @@ import path from "path";
 import { Lead, CrmRecord } from "./types";
 import { seedLeads } from "./seed";
 
-const DATA_DIR = path.join(process.cwd(), "data");
+import { DATA_DIR } from "./data-dir";
 const DATA_FILE = path.join(DATA_DIR, "leads.json");
 
 async function ensureFile(): Promise<void> {

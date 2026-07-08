@@ -2,7 +2,7 @@ import { promises as fs } from "fs";
 import path from "path";
 import { ExecutionEngineReport } from "./types";
 
-const DATA_DIR = path.join(process.cwd(), "data");
+import { DATA_DIR } from "./data-dir";
 const REPORTS_FILE = path.join(DATA_DIR, "execution-engine.json");
 
 export async function getExecutionReports(): Promise<ExecutionEngineReport[]> {

@@ -2,7 +2,7 @@ import { promises as fs } from "fs";
 import path from "path";
 import { DiscoveredAccount, DiscoveredContact } from "./types";
 
-const DATA_DIR = path.join(process.cwd(), "data");
+import { DATA_DIR } from "./data-dir";
 const UNIVERSE_FILE = path.join(DATA_DIR, "prospect-universe.json");
 
 interface ProspectUniverse {

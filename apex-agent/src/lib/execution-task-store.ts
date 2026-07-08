@@ -2,7 +2,7 @@ import { promises as fs } from "fs";
 import path from "path";
 import { ExecutionTask } from "./types";
 
-const DATA_DIR = path.join(process.cwd(), "data");
+import { DATA_DIR } from "./data-dir";
 const TASKS_FILE = path.join(DATA_DIR, "execution-tasks.json");
 
 export async function getExecutionTasks(): Promise<ExecutionTask[]> {

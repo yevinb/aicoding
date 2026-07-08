@@ -2,7 +2,7 @@ import { promises as fs } from "fs";
 import path from "path";
 import { MissionControlReport } from "./types";
 
-const DATA_DIR = path.join(process.cwd(), "data");
+import { DATA_DIR } from "./data-dir";
 const BRIEFINGS_FILE = path.join(DATA_DIR, "mission-control.json");
 
 export async function getMissionBriefings(): Promise<MissionControlReport[]> {

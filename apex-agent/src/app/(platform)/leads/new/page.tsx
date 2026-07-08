@@ -58,7 +58,7 @@ export default function NewLeadPage() {
     <div className="max-w-2xl">
       <h1 className="text-2xl font-semibold">Add lead</h1>
       <p className="text-sm text-muted mt-1 mb-8">
-        Give Apex whatever you know. It will research, score, and decide the
+        Give ApexGrowth whatever you know. It will research, score, and decide the
         next action.
       </p>
 
@@ -101,7 +101,7 @@ export default function NewLeadPage() {
           </span>
           <textarea
             rows={3}
-            placeholder="Anything else Apex should know about this lead…"
+            placeholder="Anything else ApexGrowth should know about this lead…"
             value={notes}
             onChange={(e) => setNotes(e.target.value)}
             className="w-full rounded-lg border border-line bg-surface px-3 py-2 text-sm outline-none focus:border-accent transition"

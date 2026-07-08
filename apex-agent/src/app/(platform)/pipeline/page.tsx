@@ -21,7 +21,7 @@ export default async function PipelinePage() {
       <div>
         <h1 className="text-2xl font-semibold">Pipeline</h1>
         <p className="text-sm text-muted mt-1">
-          Apex researches, scores, and works every lead. Open a lead to run the
+          ApexGrowth researches, scores, and works every lead. Open a lead to run the
           agent.
         </p>
       </div>

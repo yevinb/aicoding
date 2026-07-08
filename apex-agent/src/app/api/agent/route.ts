@@ -22,7 +22,7 @@ export async function POST(req: NextRequest) {
     id: crypto.randomUUID(),
     timestamp: new Date().toISOString(),
     type: "agent_run",
-    summary: `Apex run — ${output.recommendedNextAction.label} (priority ${output.qualification.priorityScore})`,
+    summary: `ApexGrowth run — ${output.recommendedNextAction.label} (priority ${output.qualification.priorityScore})`,
     detail: instruction,
   };
 

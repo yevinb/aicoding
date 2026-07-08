@@ -13,7 +13,7 @@ export default function MarketingLayout({
             <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-accent text-white font-bold">
               A
             </span>
-            <span className="font-semibold tracking-tight">Apex</span>
+            <span className="font-semibold tracking-tight">ApexGrowth</span>
           </Link>
           <nav className="hidden sm:flex items-center gap-8 text-sm text-muted">
             <a href="#how-it-works" className="hover:text-foreground transition">
@@ -21,6 +21,9 @@ export default function MarketingLayout({
             </a>
             <a href="#agents" className="hover:text-foreground transition">
               AI team
+            </a>
+            <a href="#pricing" className="hover:text-foreground transition">
+              Pricing
             </a>
             <a href="#trust" className="hover:text-foreground transition">
               Trust
@@ -37,7 +40,7 @@ export default function MarketingLayout({
               href="/os"
               className="rounded-lg bg-accent px-4 py-2 text-sm font-medium text-white hover:opacity-90 transition"
             >
-              Launch Apex
+              Launch ApexGrowth
             </Link>
           </div>
         </div>
@@ -45,7 +48,7 @@ export default function MarketingLayout({
       <main className="flex-1 pt-16">{children}</main>
       <footer className="border-t border-white/5 py-12">
         <div className="mx-auto max-w-6xl px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-muted">
-          <p>© {new Date().getFullYear()} Apex. Autonomous revenue intelligence.</p>
+          <p>© {new Date().getFullYear()} ApexGrowth. Autonomous revenue intelligence.</p>
           <div className="flex gap-6">
             <Link href="/pipeline" className="hover:text-foreground transition">
               Platform

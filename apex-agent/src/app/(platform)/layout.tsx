@@ -14,7 +14,7 @@ export default function PlatformLayout({
               A
             </span>
             <span>
-              <span className="block font-semibold leading-tight">Apex</span>
+              <span className="block font-semibold leading-tight">ApexGrowth</span>
               <span className="block text-xs text-muted leading-tight">
                 AI Revenue Orchestrator
               </span>

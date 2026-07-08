@@ -15,7 +15,7 @@ export default async function CommandCenterPage() {
         <div>
           <h1 className="text-2xl font-semibold">Command Center</h1>
           <p className="text-sm text-muted mt-1">
-            Apex runs its full operating loop — observe, analyze, plan, execute,
+            ApexGrowth runs its full operating loop — observe, analyze, plan, execute,
             learn — across the entire pipeline and reports back.
           </p>
         </div>
@@ -25,7 +25,7 @@ export default async function CommandCenterPage() {
       {!latest ? (
         <div className="rounded-xl border border-line bg-surface p-12 text-center text-muted">
           <p className="text-sm">
-            No cycles run yet. Click “Run orchestration cycle” and Apex will
+            No cycles run yet. Click “Run orchestration cycle” and ApexGrowth will
             score every lead, execute the highest-value actions, update the
             CRM, and produce its report.
           </p>

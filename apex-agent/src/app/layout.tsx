@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Apex — Autonomous AI Revenue Employee",
+  title: "ApexGrowth — Autonomous AI Revenue Employee",
   description:
-    "Your AI sales team that works 24/7. Apex discovers opportunities, researches accounts, runs outreach, handles replies, books meetings, and improves itself.",
+    "Your AI sales team that works 24/7. ApexGrowth discovers opportunities, researches accounts, runs outreach, handles replies, books meetings, and improves itself.",
 };
 
 export default function RootLayout({

@@ -14,7 +14,7 @@ export default async function RuntimePage() {
         <div>
           <h1 className="text-2xl font-semibold">Scheduler Runtime</h1>
           <p className="text-sm text-muted mt-1">
-            Autonomous scheduler and worker heartbeat for continuous Apex cycles.
+            Autonomous scheduler and worker heartbeat for continuous ApexGrowth cycles.
           </p>
         </div>
         <RunSchedulerRuntimeButton />
