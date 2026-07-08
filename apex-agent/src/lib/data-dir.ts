@@ -1,8 +1,14 @@
 import path from "path";
 
-const LOCAL_DATA_DIR = path.join(process.cwd(), "data");
+const CWD = process.cwd();
+const LOCAL_DATA_DIR = path.join(CWD, "data");
 const SERVERLESS_DATA_DIR = path.join("/tmp", "apexgrowth-data");
+const IS_READONLY_SERVERLESS =
+  process.env.VERCEL === "1" ||
+  CWD.startsWith("/var/task") ||
+  Boolean(process.env.AWS_LAMBDA_FUNCTION_NAME);
 
-/** Writable data directory — project `data/` locally, `/tmp` on Vercel serverless. */
-export const DATA_DIR =
-  process.env.VERCEL === "1" ? SERVERLESS_DATA_DIR : LOCAL_DATA_DIR;
+/** Writable data directory — local project `data/`, serverless `/tmp`. */
+export const DATA_DIR = IS_READONLY_SERVERLESS
+  ? SERVERLESS_DATA_DIR
+  : LOCAL_DATA_DIR;
